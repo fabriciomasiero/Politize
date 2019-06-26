@@ -12,9 +12,13 @@ With cell size treatments and image download.
 
 Without ANY frameworks, fully Apple's native code
 
-##  Want a Amazing Thing?
+##  SwiftUI !!!!!
 
-* Theres a sample in SwiftUI and all the new stuff presented on WWDC 19! Is theme based and NO view controllers!!
+
+* Theres a sample in SwiftUI (with all features on -master-) and all the new stuff presented on WWDC 19! Is theme based(.darkTheme and .whiteTheme) and NO view controllers!!
+* Development on Xcode 11 Beta 2
+
+* * What I need to run this project on brand new SwiftUI? Just download the Xcode 11 Beta 2 ++
 
 ### Check it out on: https://github.com/fabriciomasiero/Politize/tree/swiftUI
 
