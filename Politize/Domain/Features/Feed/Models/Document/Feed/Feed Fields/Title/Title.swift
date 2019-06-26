@@ -1,5 +1,5 @@
 //
-//  PublishedAt.swift
+//  Title.swift
 //  Politize
 //
 //  Created by Fabrício Masiero on 24/06/19.
@@ -7,12 +7,15 @@
 //
 
 import Foundation
+import SwiftUI
 
-public struct PublishedAt: Codable {
+public struct Title: Codable, Hashable, Identifiable {
     
+    public var id: Int?
     public let value: String
     
     private enum CodingKeys: String, CodingKey {
-        case value = "timestampValue"
+        case id
+        case value = "stringValue"
     }
 }

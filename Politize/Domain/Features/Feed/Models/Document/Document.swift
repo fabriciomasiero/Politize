@@ -1,5 +1,5 @@
 //
-//  Summary.swift
+//  Document.swift
 //  Politize
 //
 //  Created by Fabrício Masiero on 24/06/19.
@@ -7,12 +7,18 @@
 //
 
 import Foundation
+import SwiftUI
 
-public struct Summary: Codable {
+public struct Document: Codable, Hashable, Identifiable {
     
-    public let value: String
+    public var id: Int?
+    
+    public let feeds: [Feed]
     
     private enum CodingKeys: String, CodingKey {
-        case value = "stringValue"
+        case id
+        case feeds = "documents"
     }
+    
+    
 }
