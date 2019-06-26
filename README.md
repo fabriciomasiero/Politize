@@ -19,6 +19,7 @@ Without ANY frameworks, fully Apple's native code
 * Development on Xcode 11 Beta 2
 
 * * What I need to run this project on brand new SwiftUI? Just download the Xcode 11 Beta 2 ++
+* * * To run on device, you need to be enrolled on iOS or iPadOS Developer Beta program and run on beta OS device
 
 ### Check it out on: https://github.com/fabriciomasiero/Politize/tree/swiftUI
 
