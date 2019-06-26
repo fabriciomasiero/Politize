@@ -10,7 +10,7 @@ import Foundation
 
 public struct FeedFields: Codable {
     public let imageUrl: ImageUrl
-    private let publishedAt: PublishedAt
+    public let publishedAt: PublishedAt
     public let summary: Summary
     public let title: Title
     public var publishedDate: Date?

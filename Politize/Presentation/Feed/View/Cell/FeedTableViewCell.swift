@@ -28,7 +28,7 @@ class FeedTableViewCell: UITableViewCell {
     
     public func configureCell(feed: Feed) {
         titleLabel.text = feed.fields.title.value
-//        dateLabel.text = feed.fields.publishedAt.value
+        dateLabel.text = feed.fields.publishedAt.dateString()
         descriptionLabel.text = feed.fields.summary.value
         feedImageView.set(imageUrl: feed.fields.imageUrl.value, title: feed.fields.title.value)
     }

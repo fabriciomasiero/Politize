@@ -26,7 +26,8 @@ class FeedViewController: UIViewController {
     private func getFeeds() {
         APIClient.sharedInstance.retrieveFeed(url: "politize-feed") { feedList, error in
             if let feed = feedList {
-                self.feed = feed
+                let sortedFeeds = feed.sorted(by: {$0.fields.publishedAt.date().timeIntervalSince1970 < $1.fields.publishedAt.date().timeIntervalSince1970})
+                self.feed = sortedFeeds
                 self.updateScreen()
             }
         }
@@ -40,7 +41,6 @@ class FeedViewController: UIViewController {
     private func tableViewConfiguration() {
         tableView.register(UINib(nibName: "FeedTableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
         tableView.estimatedRowHeight = 500
-//        tableView.
         tableView.rowHeight = UITableView.automaticDimension
         tableView.delegate = self
         tableView.dataSource = self
